@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       WORKDIR: ./src/HelloWorld
+      CONFIG: Release
       AZURE_FUNCTIONAPP_NAME: "github-actions-workshop-5"
     defaults:
       run:
