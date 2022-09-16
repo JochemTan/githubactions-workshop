@@ -39,9 +39,8 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
       
     - name: Publish
-      run: |
-       dotnet publish -c ${{ env.CONFIG }}
-       shell: bash
+      run: dotnet publish -c ${{ env.CONFIG }}
+      shell: bash
 
     - name: Azure Functions Action
       uses: Azure/functions-action@v1.4.7
